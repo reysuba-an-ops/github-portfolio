@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio of Your Name — developer, designer, etc." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">YourName</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I'm Your Name</h1>
+        <p class="lead">A short tagline: frontend developer, designer, open-source enthusiast.</p>
+        <p class="cta">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Write a short paragraph about yourself: what you do, your focus areas, and what you're looking for.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Project One</h3>
+          <p>Short description of project one. Tech: HTML, CSS, JS.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a> ·
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Project Two</h3>
+          <p>Short description of project two. Tech: React, API.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a> ·
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </p>
+        </article>
+
+        <!-- Add more projects here -->
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>HTML & CSS / Responsive Design</li>
+        <li>APIs / Node.js</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Interested in working together? Email me at <a href="mailto:you@example.com">you@example.com</a> or use the form below.</p>
+      <form id="contact-form" class="contact-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name · <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
